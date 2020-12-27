@@ -6,25 +6,22 @@ Kelompok T19
 
 
 ---
-## Table of Contents
-
----
 
 ## Tahap Persiapan
- **Pembuatan Topologi\
+### Pembuatan Topologi
  
  
- **Subnetting()\
+### Subnetting()
  
  
- **Routing\
+### Routing
  
  
- **DHCP Relay dan DHCP Server
+### DHCP Relay dan DHCP Server
  
  
 ## Soal
- **Nomor 1
+### Nomor 1
  
  
- **Nomor 2
+### Nomor 2
