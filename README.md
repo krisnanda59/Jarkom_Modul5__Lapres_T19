@@ -90,17 +90,57 @@ Kelompok T19
 ### Nomor 1
  - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j SNAT --to-source 10.151.76.82```
+  
   ![1_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_syntax.png)
+  
+ - Kemudian hasilnya seperti dibawah;   
+ 
+  ![1_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_surabaya%20berhasil%20ping.png)  
+  
+  ![1_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_sidoarjo%20berhasil%20ping.png)  
+  
+  ![1_4](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_probolinggo%20berhasil%20ping.png)  
+  
+  ![1_5](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_mojokerto%20berhasil%20ping.png)  
+  
+  ![1_6](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_malang%20berhasil%20ping.png)  
+  
+  ![1_7](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_madiun%20berhasil%20ping.png)  
+  
+  ![1_8](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_kediri%20berhasil%20ping.png)  
+  
+  ![1_9](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_gresik%20berhasil%20ping.png)  
+  
+  ![1_10](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_bukti_batu%20berhasil%20ping.png)  
  
 ### Nomor 2
  - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -A FORWARD -p tcp --dport 22 -d 10.151.77.160/29 -i eth0 -j DROP```
+  
   ![2_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%202_syntax.png)
 
+ - Kemudian hasilnya seperti dibawah;
+ 
+  ![2_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%202_bukti_mengirim%20paket%20dari%20luar%20ke%20malang%20sebagai%20contoh.png)  
+ 
 ### Nomor 3
  - Pertama Konfigurasikan UML *MALANG&MOJOKERTO* dengan syntax berikut;  
 ```iptables -A INPUT -p icmp -m connlimit --connlimit-above 3 --connlimit-mask 0 -j REJECT```
+  
   ![3_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_syntax.png)
+
+ - Kemudian hasilnya seperti dibawah; 
+  
+  ![3_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_%20bukti_uml%20ke%201%20yang%20ping%20ke%20malang(tidak%20di%20drop)_nomor%203.png)  
+  
+  ![3_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_%20bukti_uml%20ke%202%20yang%20ping%20ke%20malang(tidak%20di%20drop)_nomor%203.png)  
+  
+  ![3_4](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_%20bukti_uml%20ke%203%20yang%20ping%20ke%20malang(tidak%20di%20drop)_nomor%203.png)  
+  
+  ![3_5](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_%20bukti_uml%20ke%204%20yang%20ping%20ke%20malang(berhasil%20didrop)_nomor%203.png)  
+  
+  
+ 
 
 
 
