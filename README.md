@@ -8,14 +8,14 @@ Kelompok T19
 ---
 
 ## Tahap Persiapan
-### Pembuatan Topologi
+### A: Pembuatan Topologi
  - Pertama-tama kami membuat file ```topologi.sh``` dengan isi seperti dibawah;
   
   ![topologi_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/topologi_persiapan.png)
  
  
  
-### Subnetting(CIDR)
+### B: Subnetting(CIDR)
  - Pertama-tama kita membagi subnet, lalu menghitungnya di tiap bagian seperti dibawah;
   
   ![subnetting_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/pembagian%20subnet_persiapan.png)
@@ -71,7 +71,7 @@ Kelompok T19
      ![topologi_10](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20sidoarjo_persiapan.png)
  
 
-### Routing
+### C: Routing
  - Routing dilakukan dengan mengisi file ```etc/network/interface```.
  - Kemudian isi file route.sh pada UML  *SURABAYA* dan *KEDIRI*.
    
@@ -80,7 +80,7 @@ Kelompok T19
   ![routing_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/routing%20kediri_persiapan.png)
  
  
-### DHCP Relay dan DHCP Server
+### D: DHCP Relay dan DHCP Server
  - Pertama isi file ```/etc/dhcp/dhcpd.conf``` pada UML *MOJOKERTO*.
  - Kemudian isi file ```/etc/default/isc-dhcp-relay``` pada UML *SURABAYA*, *KEDIRI*, *BATU*, dan *MOJOKERTO*.
  
