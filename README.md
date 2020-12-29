@@ -33,7 +33,9 @@ Kelompok T19
 
  - Kemudian pada semua UML Router, ke file ```/etc/sysctl.conf``` kemudian uncomment ```net.ipv4.ip_forward=1```, dan aktifkan dengan syntax ```sysctl -p```.
  - Disini kami melakukan subnetting pada setiap UML berdasarkan pembagian IP yang sudah dilakukan, subentting dilakukan pada ```/etc/network/interfaces``` 
- - Setelah itu UML di restart menggunakan ```service networking restart```.
+ - Setelah itu UML di restart menggunakan ```service networking restart```.  
+   
+  # Berikut subnetting yang dilakukan pada semua UML: 
    - Router *SURABAYA*
     
      ![topologi_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20surabaya_persiapan.png)
