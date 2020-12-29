@@ -88,6 +88,7 @@ Kelompok T19
  
 ## Soal
 ### Nomor 1
+Soal 1 meminta kami untuk membuat topologi yang sudah dibuat dapt mengakses keluar, maka diminta untuk membuat konfigurasi pada *SURABAYA* tanapa menggunakan *Masquerade*
  - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j SNAT --to-source 10.151.76.82```
   
