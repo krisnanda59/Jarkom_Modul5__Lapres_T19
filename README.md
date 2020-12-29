@@ -15,21 +15,21 @@ Kelompok T19
  - Lalu kami mengatur interface pada semua UML di ```/etc/network/interfaces``` dan restart dengan menggunakan syntax ```service networking restart```.
    - Router *SURABAYA*
      ![topologi_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20surabaya_persiapan.png)
-   - Router *KEDIRI*
+   - Router *KEDIRI*  
      ![topologi_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20kediir_persiapan.png)
-   - Router *BATU*
+   - Router *BATU*  
      ![topologi_4](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20batu_persiapan.png)
-   - Server *MADIUN*
+   - Server *MADIUN*  
      ![topologi_5](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20madiun_persiapan.png)
-   - Server *PROBOLINGGO*
+   - Server *PROBOLINGGO*  
      ![topologi_6](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20probolinggo_persiapan.png)
-   - Server *MALANG*
+   - Server *MALANG*  
      ![topologi_7](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20malang_persiapan.png)
-   - Server *MOJOKERTO*
+   - Server *MOJOKERTO*  
      ![topologi_8](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20mojokerto_persiapan.png)
-   - Klien *GRESIK*
+   - Klien *GRESIK*  
      ![topologi_9](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20gresik_persiapan.png)
-   - Klien *SIDOARJO*
+   - Klien *SIDOARJO*  
      ![topologi_10](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20sidoarjo_persiapan.png)
  
 ### Subnetting(CIDR)
