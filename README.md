@@ -20,7 +20,7 @@ Kelompok T19
    - Terakhir gabungkan Host C1 - C2 hingga membentuk Host baru yaitu D1 dengan Subnet Mask /21.
  - Kemudian kami membuat IP treenya berdasarkan pembagian subnet yang tadi seperti dibawah;
   ![subnetting_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/tree_persiapan.png)
- - Dari pohon tersebut akan mendapat pembagian IP sebagai berikut;
+ - Dari pohon tersebut akan mendapat pembagian IP sebagai berikut;  
   ![subnetting_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/Pembagian%20IP_persiapan(%20ditulis%20jangan%20dimasukin%20gambar).png)
 
  ### Routing
