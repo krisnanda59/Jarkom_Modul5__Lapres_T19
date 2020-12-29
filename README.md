@@ -69,24 +69,35 @@ Kelompok T19
   ![subnetting_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/Pembagian%20IP_persiapan(%20ditulis%20jangan%20dimasukin%20gambar).png)
 
 
- ### Routing
-  - Routing dilakukan dengan mengisi file ```etc/network/interface```.
-  - Kemudian isi file route.sh pada UML  *SURABAYA* dan *KEDIRI*.
+### Routing
+ - Routing dilakukan dengan mengisi file ```etc/network/interface```.
+ - Kemudian isi file route.sh pada UML  *SURABAYA* dan *KEDIRI*.
    
-   ![routing_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/routing%20surabaya_persiapan.png)
+  ![routing_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/routing%20surabaya_persiapan.png)
    
-   ![routing_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/routing%20kediri_persiapan.png)
+  ![routing_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/routing%20kediri_persiapan.png)
  
  
- ### DHCP Relay dan DHCP Server
-  - Pertama isi file ```/etc/dhcp/dhcpd.conf``` pada UML *MOJOKERTO*.
-  - Kemudian isi file ```/etc/default/isc-dhcp-relay``` pada UML *SURABAYA*, *KEDIRI*, *BATU*, dan *MOJOKERTO*.
+### DHCP Relay dan DHCP Server
+ - Pertama isi file ```/etc/dhcp/dhcpd.conf``` pada UML *MOJOKERTO*.
+ - Kemudian isi file ```/etc/default/isc-dhcp-relay``` pada UML *SURABAYA*, *KEDIRI*, *BATU*, dan *MOJOKERTO*.
  
 ## Soal
 ### Nomor 1
- 
+ - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;
+```iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j SNAT --to-source 10.151.76.82```
+  ![1_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_syntax.png)
  
 ### Nomor 2
-
+ - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;
+```iptables -A FORWARD -p tcp --dport 22 -d 10.151.77.160/29 -i eth0 -j DROP```
+  ![2_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%202_syntax.png)
 
 ### Nomor 3
+ - Pertama Konfigurasikan UML *MALANG&MOJOKERTO* dengan syntax berikut;
+```iptables -A INPUT -p icmp -m connlimit --connlimit-above 3 --connlimit-mask 0 -j REJECT```
+  ![3_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_syntax.png)
+
+
+
+
