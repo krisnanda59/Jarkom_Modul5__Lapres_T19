@@ -23,7 +23,7 @@ Kelompok T19
    - Gabungkan Host A1 - A2 & A5 - A6 hingga membentuk Host baru yaitu B1 & B2 dengan Subnet Mask /23.
    - Kemudian gabungkan Host B1 - A3 & B2 - A4 hingga membentuk Host baru yaitu C1 & C2 dengan Subnet Mask /22.
    - Terakhir gabungkan Host C1 - C2 hingga membentuk Host baru yaitu D1 dengan Subnet Mask /21.
- - Kemudian kami membuat IP treenya berdasarkan pembagian subnet yang tadi seperti dibawah;
+ - Dengan pembulatan yang telah diperoleh kami dapat membuat IP tree, seperti berikut;
   
   ![subnetting_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/tree_persiapan.png)
  
@@ -32,7 +32,8 @@ Kelompok T19
   ![subnetting_3](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/Pembagian%20IP_persiapan(%20ditulis%20jangan%20dimasukin%20gambar).png)
 
  - Kemudian pada semua UML Router, ke file ```/etc/sysctl.conf``` kemudian uncomment ```net.ipv4.ip_forward=1```, dan aktifkan dengan syntax ```sysctl -p```.
- - Lalu kami mengatur interface pada semua UML di ```/etc/network/interfaces``` dan restart dengan menggunakan syntax ```service networking restart```.
+ - Disini kami melakukan subnetting pada setiap UML berdasarkan pembagian IP yang sudah dilakukan, subentting dilakukan pada ```/etc/network/interfaces``` 
+ - Setelah itu UML di restart menggunakan ```service networking restart```.
    - Router *SURABAYA*
     
      ![topologi_2](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/interfaces%20surabaya_persiapan.png)
