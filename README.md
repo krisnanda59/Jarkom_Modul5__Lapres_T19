@@ -125,7 +125,7 @@ Soal meminta kami untuk mendrop semua akses SSH dari luar Topologi (UML) Kalian 
 * -A FORWARD FORWARD sebagai chain yang kami gunakan untuk menyaring paket dengan protokol TCP dari luar topologi menuju ke DHCP Server MOJOKERTO dan DNS Server MALANG
 * -p tcp mendefinisakn paket dengan protokol apa yang akan di filter
 * --dport 22 mendefinisikan paket dengan port berapa yang akan di filter
-* - d 10.151.77.160/29 -i eth0 merupakan ip destionation
+* -d 10.151.77.160/29 -i eth0 merupakan ip destionation
 * -j DROP adalah action yang digunakan dimana akan membuang semua paket yang tidak memenuhi kriteria filter.
 
   ![2_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%202_syntax.png)
