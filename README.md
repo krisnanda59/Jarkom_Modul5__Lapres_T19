@@ -84,17 +84,17 @@ Kelompok T19
  
 ## Soal
 ### Nomor 1
- - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;
+ - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j SNAT --to-source 10.151.76.82```
   ![1_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_syntax.png)
  
 ### Nomor 2
- - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;
+ - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -A FORWARD -p tcp --dport 22 -d 10.151.77.160/29 -i eth0 -j DROP```
   ![2_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%202_syntax.png)
 
 ### Nomor 3
- - Pertama Konfigurasikan UML *MALANG&MOJOKERTO* dengan syntax berikut;
+ - Pertama Konfigurasikan UML *MALANG&MOJOKERTO* dengan syntax berikut;  
 ```iptables -A INPUT -p icmp -m connlimit --connlimit-above 3 --connlimit-mask 0 -j REJECT```
   ![3_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal%203_syntax.png)
 
