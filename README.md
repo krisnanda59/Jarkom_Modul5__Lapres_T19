@@ -91,6 +91,10 @@ Kelompok T19
 Soal 1 meminta kami untuk membuat topologi yang sudah dibuat dapt mengakses keluar, maka diminta untuk membuat konfigurasi pada *SURABAYA* tanapa menggunakan *Masquerade*
  - Pertama Konfigurasikan UML *SURABAYA* dengan syntax berikut;  
 ```iptables -t nat -A POSTROUTING -s 192.168.0.0/16 -o eth0 -j SNAT --to-source 10.151.76.82```
+* -t nat NAT merupakan table yang kami guanakan
+* -A POSTROUTING POSTROUTING sebagai chain yang digunakan
+* -j SNAT mengubah source address yang awalnya berupa private IPv4 address, menjadi --to-source 10.151.70.66 yaitu IP eth0 SURABAYA kelopok t19 karena SURABAYA adalah satu-
+satunya router yang terhubung ke cloud melalui eth0.
   
   ![1_1](https://github.com/krisnanda59/Jarkom_Modul5__Lapres_T19/blob/main/dokum%20shift%205/soal1_syntax.png)
   
